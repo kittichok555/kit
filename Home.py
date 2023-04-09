@@ -33,7 +33,7 @@ if st.button("ทำนายผล"):
    Knn_model.fit(X, y)   
 
    x_input = np.array([[age, Income, Score, Work,Family_Size]])
-   st.write(Knn_model.predict(x_input))
+   #st.write(Knn_model.predict(x_input))
    
    out=Knn_model.predict(x_input)
 
