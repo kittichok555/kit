@@ -10,7 +10,6 @@ dt = pd.read_csv("./data/CustomersRR.csv")
 html_8 = """
 <div style="background-color:#6BD5DA;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
 <center><h4>การทำนายว่าคนที่เข้าร้านเป็นเพศ ชาย หรือ หญิง</h4></center>
-<hr>
 </div>
 """
 st.markdown(html_8, unsafe_allow_html=True)
