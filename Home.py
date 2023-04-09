@@ -6,35 +6,13 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.graph_objects as go
 
-
-st.header("Kittichok") 
+#st.header("การทำนายว่าคนที่เข้าร้านเป็นเพศ ชาย หรือ หญิง ") 
 #st.image("./pic/banner.jpg")
 #st.image("./pic/my.jpg")
 
-
-col1, col2, col3 = st.columns(3)
-
-with col2:
-   
-   st.image("./pic/my.jpg", use_column_width=True)
-
-col1, col2, col3 = st.columns(3)
-
-with col1:
-   st.header("Setosa")
-   st.image("./pic/setosa.jpg", use_column_width=True)
-
-with col2:
-   st.header("Versicolor")
-   st.image("./pic/versicolor.jpg", use_column_width=True)
-
-with col3:
-   st.header("Virginica")
-   st.image("./pic/Virginica.jpg", use_column_width=True)
-
 html_8 = """
 <div style="background-color:#1FFF00;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-<center><h4 style="color: #FF0000">การทำนายข้อมูลดอกไม้</h4></center>
+<center><h4 style="color: #FF0000">การทำนายว่าคนที่เข้าร้านเป็นเพศ ชาย หรือ หญิง</h4></center>
 </div>
 """
 
