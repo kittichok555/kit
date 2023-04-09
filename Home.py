@@ -23,13 +23,13 @@ dt = pd.read_csv("./data/CustomersRR.csv")
 st.write(dt.head(10))
 
 dt1 = dt['Age'].sum()
-dt2 = dt['Income'].sum()
-dt3 = dt['Spending_Score'].sum()
+dt2 = dt['Income '].sum()
+dt3 = dt['Spending_Score '].sum()
 dt4 = dt['Work_Experience'].sum()
 dt5 = dt['Family_Size'].sum()
 
-#dx = [dt1, dt2, dt3, dt4, dt5]
-#dx2 = pd.DataFrame(dx, index=["d1", "d2", "d3", "d4", "d5"])
+dx = [dt1, dt2, dt3, dt4, dt5]
+dx2 = pd.DataFrame(dx, index=["d1", "d2", "d3", "d4", "d5"])
 if st.button("แสดงการจินตทัศน์ข้อมูล"):
     #st.write(dt.head(10))
     st.bar_chart(dx2)
