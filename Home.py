@@ -6,10 +6,6 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.graph_objects as go
 
-#st.header("การทำนายว่าคนที่เข้าร้านเป็นเพศ ชาย หรือ หญิง ") 
-#st.image("./pic/banner.jpg")
-#st.image("./pic/my.jpg")
-
 dt = pd.read_csv("./data/CustomersRR.csv")
 html_8 = """
 <div style="background-color:#6BD5DA;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
@@ -33,7 +29,6 @@ if st.button("ทำนายผล"):
    Knn_model.fit(X, y)   
 
    x_input = np.array([[age, Income, Score, Work,Family_Size]])
-   #st.write(Knn_model.predict(x_input))
    
    out=Knn_model.predict(x_input)
 
