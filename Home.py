@@ -45,11 +45,11 @@ html_8 = """
 st.markdown(html_8, unsafe_allow_html=True)
 st.markdown("")
 
-age=st.number_input("กรุณาเลือกข้อมูล อายุ")
+age=st.slider("กรุณาเลือกข้อมูล อายุ")
 Income=st.number_input("กรุณาเลือกข้อมูล รายได้ต่อปี")
 Score=st.slider("กรุณาเลือกข้อมูล คะแนนการใช้จ่าย")
-Work=st.number_input("กรุณาเลือกข้อมูล ทำงานมาแล้วกี่ปี")
-Family_Size=st.number_input("กรุณาเลือกข้อมูล ขนาดของครอบครัว")
+Work=st.slider("กรุณาเลือกข้อมูล ทำงานมาแล้วกี่ปี")
+Family_Size=st.slider("กรุณาเลือกข้อมูล ขนาดของครอบครัว")
 
 if st.button("ทำนายผล"):
    
