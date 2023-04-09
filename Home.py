@@ -38,9 +38,9 @@ if st.button("ทำนายผล"):
    out=Knn_model.predict(x_input)
 
    if out[0] == 'Male':
-    st.header("ชาย")
+    st.header("คนที่เข้าร้านเป็นผู้ชาย")
    elif out[0] == 'Female':
-    st.header("หญิง")
+    st.header("คนที่เข้าร้านเป็นผู้หญิง")
    else:       
     st.header('xxx')    
     st.button("ไม่แสดงข้อมูล")
