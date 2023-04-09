@@ -10,7 +10,7 @@ import plotly.graph_objects as go
 #st.image("./pic/banner.jpg")
 #st.image("./pic/my.jpg")
 
-html_8 = """
+""" html_8 = """
 <div style="background-color:#1FFF00;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
 <center><h4 style="color: #FF0000">การทำนายว่าคนที่เข้าร้านเป็นเพศ ชาย หรือ หญิง</h4></center>
 </div>
@@ -36,12 +36,13 @@ if st.button("แสดงการจินตทัศน์ข้อมูล
     st.button("ไม่แสดงข้อมูล")
 else:
     st.write("ไม่แสดงข้อมูล")
-
+"""
 html_8 = """
 <div style="background-color:#6BD5DA;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-<center><h4>ทำนายข้อมูล</h4></center>
+<center><h4>การทำนายว่าคนที่เข้าร้านเป็นเพศ ชาย หรือ หญิง</h4></center>
 </div>
 """
+dt = pd.read_csv("./data/CustomersRR.csv")
 st.markdown(html_8, unsafe_allow_html=True)
 st.markdown("")
 
@@ -64,11 +65,11 @@ if st.button("ทำนายผล"):
    out=Knn_model.predict(x_input)
 
    if out[0] == 'Male':
-    st.write("ชาย")
+    st.header("ชาย")
    elif out[0] == 'Female':
-    st.write("หญิง")
+    st.header("หญิง")
    else:       
-    st.writ('xxx')    
+    st.header('xxx')    
     st.button("ไม่แสดงข้อมูล")
 else:
    st.write("ไม่แสดงข้อมูล")
