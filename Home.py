@@ -20,7 +20,7 @@ st.markdown(html_8, unsafe_allow_html=True)
 st.markdown("")
 
 age=st.slider("กรุณาเลือกข้อมูล อายุ",0, 130, 25)
-Income=st.number_input("กรุณาเลือกข้อมูล รายได้ต่อปี")
+Income=st.number_input("กรุณาเลือกข้อมูล รายได้ต่อปี(USD)",0, 1000000, 50000)
 Score=st.slider("กรุณาเลือกข้อมูล คะแนนการใช้จ่าย",0, 100, 50)
 Work=st.slider("กรุณาเลือกข้อมูล ทำงานมาแล้วกี่ปี",0, 50, 5)
 Family_Size=st.slider("กรุณาเลือกข้อมูล ขนาดของครอบครัว",0, 20, 3)
