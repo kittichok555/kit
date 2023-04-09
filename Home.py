@@ -10,39 +10,12 @@ import plotly.graph_objects as go
 #st.image("./pic/banner.jpg")
 #st.image("./pic/my.jpg")
 
-""" html_8 = """
-<div style="background-color:#1FFF00;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-<center><h4 style="color: #FF0000">การทำนายว่าคนที่เข้าร้านเป็นเพศ ชาย หรือ หญิง</h4></center>
-</div>
-"""
-
-st.markdown(html_8, unsafe_allow_html=True)
-st.markdown("")
-
 dt = pd.read_csv("./data/CustomersRR.csv")
-st.write(dt.head(10))
-
-dt1 = dt['Age'].sum()
-dt2 = dt['Income '].sum()
-dt3 = dt['Spending_Score '].sum()
-dt4 = dt['Work_Experience'].sum()
-dt5 = dt['Family_Size'].sum()
-
-dx = [dt1, dt2, dt3, dt4, dt5]
-dx2 = pd.DataFrame(dx, index=["d1", "d2", "d3", "d4", "d5"])
-if st.button("แสดงการจินตทัศน์ข้อมูล"):
-    #st.write(dt.head(10))
-    st.bar_chart(dx2)
-    st.button("ไม่แสดงข้อมูล")
-else:
-    st.write("ไม่แสดงข้อมูล")
-"""
 html_8 = """
 <div style="background-color:#6BD5DA;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
 <center><h4>การทำนายว่าคนที่เข้าร้านเป็นเพศ ชาย หรือ หญิง</h4></center>
 </div>
 """
-dt = pd.read_csv("./data/CustomersRR.csv")
 st.markdown(html_8, unsafe_allow_html=True)
 st.markdown("")
 
